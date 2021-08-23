@@ -1,5 +1,9 @@
 import './Home.scss';
+
 import avatar from './../assets/images/avatar.jpg';
+import et2020Thumb from './../assets/images/projects/et2020/thumbnail.jpg';
+import gk2019Thumb from './../assets/images/projects/gk2019/thumbnail.jpg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
@@ -41,11 +45,11 @@ function Home() {
 				<h3>Some of my works...</h3>
 				<div id="worksGallery">
 					<a className="project" href="project.html?id=et2020">
-						<img src="assets/images/projects/et2020/thumbnail.jpg" alt="Money Admin" />
+						<img src={et2020Thumb} alt="Money Admin" />
 						<h4>Money Admin</h4>
 					</a>
 					<a className="project" href="project.html?id=gk2019">
-						<img src="img/projects/gk2019/thumbnail.jpg" alt="Grup Kelas" />
+						<img src={gk2019Thumb} alt="Grup Kelas" />
 						<h4>Grup Kelas</h4>
 					</a>
 				</div>
