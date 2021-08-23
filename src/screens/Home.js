@@ -1,4 +1,5 @@
 import './Home.scss';
+import { Link } from "react-router-dom";
 
 import avatar from './../assets/images/avatar.jpg';
 import et2020Thumb from './../assets/images/projects/et2020/thumbnail.jpg';
@@ -44,14 +45,14 @@ function Home() {
 			<div id="works">
 				<h3>Some of my works...</h3>
 				<div id="worksGallery">
-					<a className="project" href="project.html?id=et2020">
+					<Link className="project" to="/project/et2020">
 						<img src={et2020Thumb} alt="Money Admin" />
 						<h4>Money Admin</h4>
-					</a>
-					<a className="project" href="project.html?id=gk2019">
+					</Link>
+					<Link className="project" to="/project/gk2019">
 						<img src={gk2019Thumb} alt="Grup Kelas" />
 						<h4>Grup Kelas</h4>
-					</a>
+					</Link>
 				</div>
 			</div>
 
