@@ -1,0 +1,18 @@
+@import "./common/var";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.2;
+	font-family: "Inter", Arial;
+	margin: 0;
+	background-color: $backgroundOnLight;
+	color: $colorOnLight;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: $backgroundOnDark;
+		color: $colorOnDark;
+	}
+}
