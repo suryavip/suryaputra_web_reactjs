@@ -7,7 +7,7 @@ function Project({ projectId }) {
 	let summaries = [];
 	for (let i = 0; i < project.summaries.length; i++) {
 		let sum = project.summaries[i];
-		summaries.push((<SummaryPoint icon={sum.icon} title={sum.title} content={sum.content} />));
+		summaries.push((<SummaryPoint key={i} icon={sum.icon} title={sum.title} content={sum.content} />));
 	}
 
 	return (
