@@ -1,0 +1,16 @@
+.home {
+	// make whole thing vertically centered if not overflowing
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	// when overflowing, use padding as minimum distance to edge
+	padding: 50px 20px;
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

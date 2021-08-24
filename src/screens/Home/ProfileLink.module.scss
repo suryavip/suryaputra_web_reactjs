@@ -1,0 +1,36 @@
+@import "./../../common/var";
+
+.profileLink {
+	display: flex;
+	align-items: center;
+	border-radius: 50px;
+	padding: 10px 20px 10px 5px;
+	font-size: 16px;
+	text-decoration: none;
+	color: $colorOnDark;
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	& > i {
+		width: 50px;
+		height: 50px - 10px - 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&[data-variant=email] {
+		background-color: #1e88e5;
+	}
+	&[data-variant=github] {
+		background-color: #24292e;
+	}
+	&[data-variant=linkedin] {
+		background-color: #0077b5;
+	}
+	&[data-variant=google-play] {
+		background-color: #000;
+	}
+}
