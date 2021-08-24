@@ -1,9 +1,9 @@
-import './Home.scss';
+import './Home/Home.scss';
 import { Link } from "react-router-dom";
 
 import avatar from './../assets/images/avatar.jpg';
-import et2020Thumb from './../assets/images/projects/et2020/thumbnail.jpg';
-import gk2019Thumb from './../assets/images/projects/gk2019/thumbnail.jpg';
+import et2020Thumb from './../assets/projects/images/et2020/thumbnail.jpg';
+import gk2019Thumb from './../assets/projects/images/gk2019/thumbnail.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
