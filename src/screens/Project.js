@@ -26,7 +26,7 @@ function Project({ projectId }) {
 				</div>
 			</div>
 			<div className={style.content}>
-				Hello World
+				{project.article}
 			</div>
 		</div>
 	);

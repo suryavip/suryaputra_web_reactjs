@@ -9,10 +9,11 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 	padding: $padding;
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
 	flex-direction: column;
 
 	@media screen and (min-width: $minWide) {
+		align-items: flex-start;
 		flex-direction: row;
 	}
 
@@ -30,7 +31,6 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 	max-width: 480px;
 	margin-bottom: $spacing;
 	margin-right: 0;
-	align-self: center;
 	
 	@media screen and (min-width: $minWide) {
 		min-width: $leftPanel;
@@ -49,6 +49,8 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 }
 
 .summaryContent {
+	line-height: 1.5;
+
 	& > h3 {
 		font-size: 24px;
 		font-weight: 500;
@@ -63,5 +65,33 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 
 	@media screen and (min-width: $minWide) {
 		min-width: $rightPanel;
+	}
+
+	& > article {
+		line-height: 2;
+
+		img {
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
 	}
 }

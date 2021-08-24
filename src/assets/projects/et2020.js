@@ -1,4 +1,5 @@
 import { faCode, faTasks, faPuzzlePiece, faFolderPlus, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons';
+import article from './et2020/article';
 
 const project = {
 	projectName: 'Money Admin',
@@ -40,5 +41,6 @@ const project = {
 			),
 		},
 	],
+	article: article,
 }
 export default project;
