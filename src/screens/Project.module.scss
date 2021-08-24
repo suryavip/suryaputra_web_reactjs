@@ -1,0 +1,31 @@
+.wrapper {
+	display: flex;
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;	
+}
+
+.thumbnail {
+	background-size: cover;
+	background-position: center;
+	max-width: 480px;
+	width: 100vw;
+	min-width: 260px;
+	padding-top: 50%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.summaryContent {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+
+	& > h3 {
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+}
