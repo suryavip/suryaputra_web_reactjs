@@ -19,6 +19,9 @@ function Project({ projectId }) {
 					{summaries}
 				</div>
 			</div>
+			<div className={style.content}>
+				Hello World
+			</div>
 		</div>
 	);
 }

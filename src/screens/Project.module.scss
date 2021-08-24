@@ -1,31 +1,67 @@
+$padding: 30px;
+$spacing: 30px;
+$leftPanel: 320px;
+$rightPanel: 380px;
+
+$minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
+
 .wrapper {
+	padding: $padding;
 	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-direction: column;
+
+	@media screen and (min-width: $minWide) {
+		flex-direction: row;
+	}
+
+	// get horizontal padding to 20px at 320 screen.
+	// will transition to padding 30px smoothly at 500 screen
+	// because 500 * 6% = 30
+	@media screen and (max-width: 500px) {
+		padding: $padding 6%;
+	}
 }
 
 .summary {
-	display: flex;
-	flex-direction: column;	
+	flex: 1;
+	min-width: auto;
+	max-width: 480px;
+	margin-bottom: $spacing;
+	margin-right: 0;
+	align-self: center;
+	
+	@media screen and (min-width: $minWide) {
+		min-width: $leftPanel;
+		margin-bottom: 0;
+		margin-right: $spacing;
+	}
 }
 
 .thumbnail {
 	background-size: cover;
 	background-position: center;
-	max-width: 480px;
-	width: 100vw;
-	min-width: 260px;
+	width: 100%;
 	padding-top: 50%;
 	border-radius: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .summaryContent {
-	display: flex;
-	flex-direction: column;
-	padding: 30px;
-
 	& > h3 {
 		font-size: 24px;
 		font-weight: 500;
 		margin-bottom: 30px;
+	}
+}
+
+.content {
+	flex: 2;
+	min-width: auto;
+	max-width: 600px;
+
+	@media screen and (min-width: $minWide) {
+		min-width: $rightPanel;
 	}
 }
