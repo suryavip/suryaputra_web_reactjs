@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import Home from './screens/Home';
 import reportWebVitals from './reportWebVitals';
 import {
 	BrowserRouter as Router,
@@ -9,13 +7,17 @@ import {
 	Route,
 } from "react-router-dom";
 
+import './index.scss';
+
+import Home from './screens/Home';
+import Project from './screens/Project';
+
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Switch>
-				<Route path="/">
-					<Home />
-				</Route>
+				<Route exact path="/project/:projectId" render={(props) => <Project projectId={props.match.params.projectId} />} />
+				<Route path="/"><Home /></Route>
 			</Switch>
 		</Router>
 	</React.StrictMode>,
