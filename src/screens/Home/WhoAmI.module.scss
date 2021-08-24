@@ -7,27 +7,27 @@
 	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 30px;
-}
-
-.avatar {
-	border-radius: 96px;
-	width: 96px;
-	height: 96px;
-	margin-right: 30px;
-	margin-bottom: 20px;
-}
-
-.name {
-	margin-bottom: 20px;
-
-	& > h1 {
-		font-size: 24px;
-		font-weight: 700;
-		margin-bottom: 10px;
+	
+	& > img {
+		border-radius: 96px;
+		width: 96px;
+		height: 96px;
+		margin-right: 30px;
+		margin-bottom: 20px;
 	}
-	& > h2 {
-		font-size: 18px;
-		font-weight: 400;
+	
+	& > div {
+		margin-bottom: 20px;
+		
+		& > h1 {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+		& > h2 {
+			font-size: 18px;
+			font-weight: 400;
+		}
 	}
 }
 

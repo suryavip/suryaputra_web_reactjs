@@ -11,8 +11,8 @@ function WhoAmI() {
 	return (
 		<div className={styles.whoami}>
 			<div className={styles.profile}>
-				<img className={styles.avatar} src={avatar} alt="Sudhanta Suryaputra" />
-				<div className={styles.name}>
+				<img src={avatar} alt="Sudhanta Suryaputra" />
+				<div>
 					<h1>Sudhanta Suryaputra</h1>
 					<h2>Software developer</h2>
 				</div>
