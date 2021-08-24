@@ -19,13 +19,13 @@ function WhoAmI() {
 			</div>
 			<div className={styles.links}>
 
-				<ProfileLink href="mailto:sudhanta@suryaputra.web.id" className="email" icon={faEnvelopeOpen} label="sudhanta@suryaputra.web.id" />
+				<ProfileLink href="mailto:sudhanta@suryaputra.web.id" icon={faEnvelopeOpen} label="sudhanta@suryaputra.web.id" />
 
-				<ProfileLink href="https://github.com/suryavip" className="github" icon={faGithub} label="github.com/suryavip" />
+				<ProfileLink href="https://github.com/suryavip" colorVariant="github" icon={faGithub} label="github.com/suryavip" />
 
-				<ProfileLink href="https://www.linkedin.com/in/sudhanta-suryaputra-3b56441a5/" className="linkedin" icon={faLinkedin} label="Me on LinkedIn" />
+				<ProfileLink href="https://www.linkedin.com/in/sudhanta-suryaputra-3b56441a5/" colorVariant="linkedin" icon={faLinkedin} label="Me on LinkedIn" />
 
-				<ProfileLink href="https://play.google.com/store/apps/dev?id=5437806143182305893" className="google-play" icon={faGooglePlay} label="My apps on Google Play" />
+				<ProfileLink href="https://play.google.com/store/apps/dev?id=5437806143182305893" colorVariant="google-play" icon={faGooglePlay} label="My apps on Google Play" />
 
 			</div>
 		</div>

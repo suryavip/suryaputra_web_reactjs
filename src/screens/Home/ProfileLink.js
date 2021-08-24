@@ -2,9 +2,9 @@ import { profileLink } from './ProfileLink.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function ProfileLink({ href, className, icon, label }) {
+function ProfileLink({ href, colorVariant, icon, label }) {
 	return (
-		<a target="_blank" rel="noreferrer" href={href} className={profileLink} data-variant={className}>
+		<a target="_blank" rel="noreferrer" href={href} className={profileLink} data-variant={colorVariant}>
 			<i><FontAwesomeIcon icon={icon} /></i>
 			{label}
 		</a>
