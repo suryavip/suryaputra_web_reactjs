@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import style from './Project.module.scss';
 import SummaryPoint from './Project/SummaryPoint';
 
@@ -9,6 +10,11 @@ function Project({ projectId }) {
 		let sum = project.summaries[i];
 		summaries.push((<SummaryPoint key={i} icon={sum.icon} title={sum.title} content={sum.content} />));
 	}
+
+	useEffect(() => {
+		const body = document.querySelector('#root');
+		body.scrollIntoView();
+	}, []);
 
 	return (
 		<div className={style.wrapper}>
