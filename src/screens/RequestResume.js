@@ -4,6 +4,9 @@ import ProfileLink from './Home/ProfileLink';
 
 import { faCopy, faEnvelopeOpen, faHome } from '@fortawesome/free-solid-svg-icons';
 
+import firebase from "firebase/app";
+import "firebase/analytics";
+
 function RequestResume() {
 	useEffect(() => {
 		const body = document.querySelector('#root');
@@ -14,6 +17,9 @@ function RequestResume() {
 		navigator.clipboard.writeText('sudhanta@suryaputra.web.id');
 		alert('Email address copied!');
 	}
+
+	const analytics = firebase.analytics();
+	analytics.logEvent('request_resume_visit', {});
 
 	return (
 		<div className={style.wrap}><div>

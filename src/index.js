@@ -6,12 +6,26 @@ import {
 	Switch,
 	Route,
 } from "react-router-dom";
+import firebase from "firebase/app";
+import "firebase/analytics";
 
 import './index.scss';
 
 import Home from './screens/Home';
 import Project from './screens/Project';
 import RequestResume from './screens/RequestResume';
+
+// Initialize Firebase
+firebase.initializeApp({
+	apiKey: "AIzaSyCu4Yxl54BWnA5y-zeXY7CmcJuz5s0BTW0",
+	authDomain: "personalweb-f9db0.firebaseapp.com",
+	projectId: "personalweb-f9db0",
+	storageBucket: "personalweb-f9db0.appspot.com",
+	messagingSenderId: "500510270562",
+	appId: "1:500510270562:web:0caec5ad89d6b40b7c9d3b",
+	measurementId: "G-Z3GLEK8HFP"
+});
+firebase.analytics();
 
 ReactDOM.render(
 	<React.StrictMode>
