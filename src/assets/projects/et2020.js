@@ -1,10 +1,22 @@
-import { faCode, faTasks, faPuzzlePiece, faFolderPlus, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+	faCode,
+	faTasks,
+	faPuzzlePiece,
+	faFolderPlus,
+	faHeadphonesAlt,
+	faHeartbeat,
+} from '@fortawesome/free-solid-svg-icons';
 import article from './et2020/article';
 
 const project = {
 	projectName: 'Money Admin',
 	thumbnail: require('./et2020/thumbnail.jpg').default,
 	summaries: [
+		{
+			icon: faHeartbeat,
+			title: 'Status:',
+			content: (<p>Released, since May 2021</p>),
+		},
 		{
 			icon: faCode,
 			title: 'Language & framework:',
