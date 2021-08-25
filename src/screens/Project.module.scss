@@ -53,6 +53,7 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 
 .summary {
 	flex: 1;
+	width: 100%;
 	min-width: auto;
 	max-width: 480px;
 	margin-bottom: $spacing;
