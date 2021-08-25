@@ -13,8 +13,13 @@ function RequestResume() {
 		body.scrollIntoView();
 	}, []);
 
-	const copyToClipboard = function() {
-		navigator.clipboard.writeText('sudhanta@suryaputra.web.id');
+	const copyToClipboard = async function() {
+		const textarea = document.createElement('textarea');
+      	textarea.innerText = 'sudhanta@suryaputra.web.id';
+		document.body.appendChild(textarea);
+		textarea.select();
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
 		alert('Email address copied!');
 	}
 
@@ -25,6 +30,10 @@ function RequestResume() {
 		<div className={style.wrap}><div>
 			<h4>🙏 Thank you for your interest on my CV/Resume.</h4>
 			<p>Please send me an email sent from your company's email address and explain who you are. My resume may contains private informations that I don't like to be publicly available.</p>
+			<blockquote>
+				My email address: <br/>
+				<strong>sudhanta@suryaputra.web.id</strong>
+			</blockquote>
 			<div className={style.buttons}>
 				<ProfileLink href="mailto:sudhanta@suryaputra.web.id" icon={faEnvelopeOpen} label="Open email app" />
 				<ProfileLink href="#" navigation icon={faCopy} label="Copy my email address" onClick={copyToClipboard} />
