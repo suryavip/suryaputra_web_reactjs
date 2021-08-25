@@ -1,4 +1,7 @@
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import style from './Project.module.scss';
 import SummaryPoint from './Project/SummaryPoint';
 
@@ -17,16 +20,20 @@ function Project({ projectId }) {
 	}, []);
 
 	return (
-		<div className={style.wrapper}>
-			<div className={style.summary}>
-				<div className={style.thumbnail} style={{ backgroundImage: `url(${project.thumbnail})` }}></div>
-				<div className={style.summaryContent}>
-					<h3>Summary</h3>
+		<div>
+			<Link className={style.backBtn} to="/">
+				<FontAwesomeIcon icon={faHome} fixedWidth />
+				Back to home
+			</Link>
+			<h1 className={style.title}>{project.projectName}</h1>
+			<div className={style.wrapper}>
+				<div className={style.summary}>
+					<div className={style.thumbnail} style={{ backgroundImage: `url(${project.thumbnail})` }}></div>
 					{summaries}
 				</div>
-			</div>
-			<div className={style.content}>
-				{project.article}
+				<div className={style.content}>
+					{project.article}
+				</div>
 			</div>
 		</div>
 	);
