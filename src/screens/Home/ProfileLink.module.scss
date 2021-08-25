@@ -32,4 +32,12 @@
 	&[data-variant=google-play] {
 		background-color: #000;
 	}
+	&[data-variant=muted] {
+		background-color: #eeeeee;
+		color: $colorOnLight;
+		@media (prefers-color-scheme: dark) {
+			background-color: #424242;
+			color: $colorOnDark;
+		}
+	}
 }

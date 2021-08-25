@@ -4,7 +4,7 @@ import ProfileLink from './ProfileLink';
 
 import avatar from './../../assets/images/avatar.jpg';
 
-import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
 function WhoAmI() {
@@ -26,6 +26,8 @@ function WhoAmI() {
 				<ProfileLink href="https://www.linkedin.com/in/sudhanta-suryaputra-3b56441a5/" colorVariant="linkedin" icon={faLinkedin} label="Me on LinkedIn" />
 
 				<ProfileLink href="https://play.google.com/store/apps/dev?id=5437806143182305893" colorVariant="google-play" icon={faGooglePlay} label="My apps on Google Play" />
+
+				<ProfileLink href="/request-resume" icon={faFileAlt} label="Request CV/Resume" navigation />
 
 			</div>
 		</div>

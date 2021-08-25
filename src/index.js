@@ -11,11 +11,13 @@ import './index.scss';
 
 import Home from './screens/Home';
 import Project from './screens/Project';
+import RequestResume from './screens/RequestResume';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Switch>
+				<Route exact path="/request-resume"><RequestResume /></Route>
 				<Route exact path="/project/:projectId" render={(props) => <Project projectId={props.match.params.projectId} />} />
 				<Route path="/"><Home /></Route>
 			</Switch>
