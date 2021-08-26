@@ -1,7 +1,15 @@
 $backgroundOnLight: #fff;
-$colorOnLight: #111;
+$colorOnLight: #212121;
 
 $backgroundOnDark: #212121;
-$colorOnDark: #eee;
+$colorOnDark: #ccc;
 
 $accentColor: #1e88e5;
+
+@mixin whiteColor {
+	color: #fff;
+
+	@media (prefers-color-scheme: dark) {
+		color: #ddd;
+	}
+}
