@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setting up Firebase Analytics
+
+Rename `src/firebaseConfig.sample.js` to `src/firebaseConfig.js` and fill the config to match your firebase project.
+
 ## Available Scripts
 
 In the project directory, you can run:
