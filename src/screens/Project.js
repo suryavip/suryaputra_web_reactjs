@@ -6,6 +6,11 @@ import style from './Project.module.scss';
 import SummaryPoint from './Project/SummaryPoint';
 
 function Project({ projectId }) {
+	useEffect(() => {
+		const body = document.querySelector('#root');
+		body.scrollIntoView();
+	}, []);
+
 	const project = require(`./../assets/projects/${projectId}`).default;
 
 	let summaries = [];
@@ -13,11 +18,6 @@ function Project({ projectId }) {
 		let sum = project.summaries[i];
 		summaries.push((<SummaryPoint key={i} icon={sum.icon} title={sum.title} content={sum.content} />));
 	}
-
-	useEffect(() => {
-		const body = document.querySelector('#root');
-		body.scrollIntoView();
-	}, []);
 
 	return (
 		<div>
