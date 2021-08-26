@@ -1,4 +1,4 @@
-@import './../common/var';
+@import "./../common/var";
 
 $padding: 30px;
 $spacing: 30px;
@@ -58,7 +58,7 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 	max-width: 480px;
 	margin-bottom: $spacing;
 	margin-right: 0;
-	
+
 	@media screen and (min-width: $minWide) {
 		min-width: $leftPanel;
 		margin-bottom: 0;
