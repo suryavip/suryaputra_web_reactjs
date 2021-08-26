@@ -12,7 +12,7 @@ const article = (
 			<li>Collaboratively manage schedule, homework, and exam.</li>
 			<li>Images and file sharing.</li>
 			<li>Track which homework has been done and which exam has been prepared.</li>
-			<li>Accessible from web browsers (https://grupkelas.boostedcode.com) (no longer active).</li>
+			<li>Accessible from web browsers (no longer available).</li>
 		</ul>
 		<br/>
 		<h2>Discontinued</h2>
