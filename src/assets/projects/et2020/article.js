@@ -14,7 +14,8 @@ const article = (
 			<li>User's privacy (data stays only within user's device and user's cloud provider of choice).</li>
 			<li>Sync and backup data via Google Drive.</li>
 		</ul>
-		<p style={{ lineHeight: 1, }}>
+		<br />
+		<p style={{ lineHeight: 1, textAlign: 'center', }}>
 			<a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=suryaputra.moneyadmin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style={{ textDecoration: 'none', color: 'inherit', }}>
 				<img style={{ width: '220px', margin: 0, }} alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
 			</a>
