@@ -73,6 +73,7 @@ $minWide: $padding + $leftPanel + $spacing + $rightPanel + $padding;
 	padding-top: 55%;
 	border-radius: 10px;
 	margin-bottom: 50px;
+	@include shadow;
 }
 
 .content {
