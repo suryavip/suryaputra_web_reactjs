@@ -32,6 +32,12 @@
 	&[data-variant=google-play] {
 		background-color: #000;
 	}
+	&[data-variant=app-store] {
+		background-color: #000;
+	}
+	&[data-variant=microsoft-store] {
+		background-color: #000;
+	}
 	&[data-variant=muted] {
 		background-color: #eee;
 		color: $colorOnLight;
