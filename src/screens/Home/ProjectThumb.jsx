@@ -1,8 +1,9 @@
 import style from './ProjectThumb.module.scss';
 import { Link } from "react-router-dom";
+import projects from '../../assets/projects';
 
 function ProjectThumb({ projectId }) {
-	const project = require(`./../../assets/projects/${projectId}`).default;
+	const project = projects[projectId];
 
 	return (
 		<Link className={style.project} to={`/project/${projectId}`}>

@@ -1,17 +1,31 @@
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import projects from '../assets/projects';
 import style from './Project.module.scss';
 import SummaryPoint from './Project/SummaryPoint';
 
-function Project({ projectId }) {
+function Project() {
+	const { projectId } = useParams();
+	const project = projects[projectId];
+
 	useEffect(() => {
 		const body = document.querySelector('#root');
 		body.scrollIntoView();
 	}, []);
 
-	const project = require(`./../assets/projects/${projectId}`).default;
+	if (!project) {
+		return (
+			<div>
+				<Link className={style.backBtn} to="/">
+					<FontAwesomeIcon icon={faHome} fixedWidth />
+					Back to home
+				</Link>
+				<h1 className={style.title}>Project not found</h1>
+			</div>
+		);
+	}
 
 	let summaries = [];
 	for (let i = 0; i < project.summaries.length; i++) {

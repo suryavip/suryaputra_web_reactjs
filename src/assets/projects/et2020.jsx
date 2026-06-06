@@ -7,10 +7,11 @@ import {
 	faHeartbeat,
 } from '@fortawesome/free-solid-svg-icons';
 import article from './et2020/article';
+import thumbnail from './et2020/thumbnail.jpg';
 
 const project = {
 	projectName: 'Money Admin',
-	thumbnail: require('./et2020/thumbnail.jpg').default,
+	thumbnail,
 	summaries: [
 		{
 			icon: faHeartbeat,

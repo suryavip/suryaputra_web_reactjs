@@ -1,4 +1,4 @@
-@import "./../../common/var";
+@use "./../../common/var" as *;
 
 .profileLink {
 	display: flex;

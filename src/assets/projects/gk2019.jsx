@@ -5,10 +5,11 @@ import {
 	faCloud,
 } from '@fortawesome/free-solid-svg-icons';
 import article from './gk2019/article';
+import thumbnail from './gk2019/thumbnail.jpg';
 
 const project = {
 	projectName: 'Grup Kelas',
-	thumbnail: require('./gk2019/thumbnail.jpg').default,
+	thumbnail,
 	summaries: [
 		{
 			icon: faHeartbeat,

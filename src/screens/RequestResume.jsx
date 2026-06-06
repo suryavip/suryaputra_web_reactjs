@@ -3,9 +3,7 @@ import style from './RequestResume.module.scss';
 import ProfileLink from './Home/ProfileLink';
 
 import { faCopy, faEnvelopeOpen, faHome } from '@fortawesome/free-solid-svg-icons';
-
-import firebase from "firebase/app";
-import "firebase/analytics";
+import { logAnalyticsEvent } from '../lib/firebase';
 
 function RequestResume() {
 	useEffect(() => {
@@ -23,8 +21,9 @@ function RequestResume() {
 		alert('Email address copied!');
 	}
 
-	const analytics = firebase.analytics();
-	analytics.logEvent('request_resume_visit', {});
+	useEffect(() => {
+		logAnalyticsEvent('request_resume_visit');
+	}, []);
 
 	return (
 		<div className={style.wrap}><div>

@@ -4,10 +4,11 @@ import {
 	faHeartbeat,
 } from '@fortawesome/free-solid-svg-icons';
 import article from './suryaputra_web/article';
+import thumbnail from './suryaputra_web/thumbnail.jpg';
 
 const project = {
 	projectName: 'This Website',
-	thumbnail: require('./suryaputra_web/thumbnail.jpg').default,
+	thumbnail,
 	summaries: [
 		{
 			icon: faHeartbeat,

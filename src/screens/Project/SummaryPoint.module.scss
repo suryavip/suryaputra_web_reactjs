@@ -1,4 +1,4 @@
-@import "./../../common/var";
+@use "./../../common/var" as *;
 
 .summaryPoint {
 	display: flex;
